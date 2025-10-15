@@ -73,47 +73,47 @@
             <div class="col-12 col-md-4 order-md-1 text-bg-warning p-5 rounded">A</div> <!-- place first on medium; secondary style tile -->
             <div class="col-12 col-md-4 order-md-3 text-bg-danger p-5 rounded">C</div> <!-- place third on medium; dark style tile -->
         </div>
-        <div class=""> <!-- second row with gaps -->
-            <div class="">Centered with an offset</div> <!-- one column that is centered on medium screens -->
+        <div class="row g-3 text-center mt-3"> <!-- second row with gaps -->
+            <div class="col-12 col-mb-6 offset-md-3 text-bg-info rounded border p-5 border-black">Centered with an offset</div> <!-- one column that is centered on medium screens -->
         </div>
 
         <!-- Demo 5 -->
-        <h3 class="">Demo 5: Nesting &amp; Gutters</h3>
-        <p class="">Parent removes outer gutters; nested row controls its own vertical and horizontal spacing.</p>
+        <h3 class="fs-5 fw-bold text-primary text-center mt-4 mb-2">Demo 5: Nesting &amp; Gutters</h3>
+        <p class="text-center small text-muted mb-3">Parent removes outer gutters; nested row controls its own vertical and horizontal spacing.</p>
         <!-- small, muted, centered -->
-        <div class=""> <!-- outer grid with no gutters, thick border, rounded, overflow hidden -->
-            <div class=""> <!-- left column with subtle themed background and inner padding -->
-                <div class="">Parent panel</div>
+        <div class="row g-0 border border-3 rounded border-primary"> <!-- outer grid with no gutters, thick border, rounded, overflow hidden -->
+            <div class="col-12 col-lg-6 bg-primary-subtle p-3"> <!-- left column with subtle themed background and inner padding -->
+                <div class="bg-primary tex-white rounded p-4 h-100 d-flex align-items-center justify-content-center">Parent panel</div>
                 <!-- solid themed panel, white text, fills height, centered both ways -->
             </div>
-            <div class=""> <!-- right column with subtle themed background and inner padding -->
-                <div class=""> <!-- nested grid with different vertical and horizontal gaps -->
-                    <div class="">
-                        <div class="">Nested 1</div> <!-- themed tile with padding, rounded, centered -->
+            <div class="col-12 col-lg-6 bg-danger-subtle p-3"> <!-- right column with subtle themed background and inner padding -->
+                <div class="row gy-2 gx-2"> <!-- nested grid with different vertical and horizontal gaps -->
+                    <div class="rounded p-3 text-center text-bg-warning">
+                        <div class="col-6">Nested 1</div> <!-- themed tile with padding, rounded, centered -->
                     </div>
-                    <div class="">
-                        <div class="">Nested 2</div> <!-- themed tile with padding, rounded, centered -->
+                    <div class="rounded p-3 text-center text-bg-secondary">
+                        <div class="col-6">Nested 2</div> <!-- themed tile with padding, rounded, centered -->
                     </div>
-                    <div class="">
-                        <div class="">Nested full width</div> <!-- full width nested tile -->
+                    <div class="rounded p-3 text-center text-bg-success">
+                        <div class="col-12">Nested full width</div> <!-- full width nested tile -->
                     </div>
                 </div>
-                <p class="">Nested row owns its gutter spacing.</p> <!-- small, muted, tiny top margin -->
+                <p class="small text-muted mt-2 mb-0">Nested row owns its gutter spacing.</p> <!-- small, muted, tiny top margin -->
             </div>
         </div>
     </section>
 
     <!-- ============== DISPLAY ================= -->
-    <section class=""> <!-- container with vertical padding -->
-        <h2 class="">Display Utilities — Visual Demos</h2> <!-- medium-bold, centered, secondary color -->
+    <section class="conatiner py-5"> <!-- container with vertical padding -->
+        <h2 class="f2-semibold text-center text-secondary">Display Utilities — Visual Demos</h2> <!-- medium-bold, centered, secondary color -->
 
-        <h3 class="">Demo 1: Responsive Visibility</h3>
-        <p class="">Show the first box only on medium and larger screens, and the second box only on small screens.</p>
+        <h3 class="fs-5 fw-bold text-primary text-center mt-4 mb-2">Demo 1: Responsive Visibility</h3>
+        <p class="text-center small text-muted mb-3">Show the first box only on medium and larger screens, and the second box only on small screens.</p>
         <!-- small, muted, centered -->
-        <div class=""> <!-- white card with thick blue border, padding, rounded, centered text -->
-            <div class="">Visible on medium and larger screens</div>
+        <div class="bg-white border-4 border-primary rounded text-center"> <!-- white card with thick blue border, padding, rounded, centered text -->
+            <div class="d-none d-md-block text-primary py-4 rounded">Visible on medium and larger screens</div>
             <!-- hidden on small; visible on md+; padded, rounded, bold color -->
-            <div class="">Visible only on small screens</div>
+            <div class="d-block d-md-none text-bg-danger py-4 rounded">Visible only on small screens</div>
             <!-- visible on small; hidden on md+; padded, rounded, contrasting color -->
         </div>
 
@@ -128,13 +128,13 @@
     </section>
 
     <!-- ============== SPACING & BOX MODEL ================= -->
-    <section class=""> <!-- container with vertical padding -->
-        <h2 class="">Spacing &amp; Box Model — Visual Demos</h2> <!-- medium-bold, centered, secondary color -->
-        <p class=""><strong>Padding</strong> = inside; <strong>Margin</strong> = outside.</p>
+    <section class="conatiner py-5"> <!-- container with vertical padding -->
+        <h2 class="f2-semibold text-center text-secondary">Spacing &amp; Box Model — Visual Demos</h2> <!-- medium-bold, centered, secondary color -->
+        <p class="text-center small text-muted mb-3"><strong>Padding</strong> = inside; <strong>Margin</strong> = outside.</p>
         <!-- small, muted, centered -->
 
         <!-- Compare -->
-        <h3 class="">Demo 1: Compare Padding vs Margin</h3>
+        <h3 class="fs-5 fw-bold text-primary text-center mb-2">Demo 1: Compare Padding vs Margin</h3>
         <div class=""> <!-- framed area with padding and border -->
             <div class=""> <!-- grid without extra gutters -->
                 <div class="">
